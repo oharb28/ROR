@@ -7,7 +7,7 @@ ENV INSTALL_PATH /opt/app
 RUN mkdir -p $INSTALL_PATH
 
 RUN gem install rails bundler
-RUN chown -R user:user /opt/app
+RUN chown -R root:root /opt/app
 WORKDIR /opt/app
 
 CMD ["/bin/sh"]
